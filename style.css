@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+   
+    font-family: 'Lexend Deca', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+.color{
+    
+}
+.container{
+width: 70%;
+height: 500px;
+position: relative;
+
+}
+.container-box{
+    width: 33.3%;
+    height: 100%;
+    padding: 50px 40px;
+    border-radius: 5px 0px 0px 5px;
+}
+.suvs{
+background-color: hsl(184, 100%, 22%);
+}
+.luxury{
+background-color:  hsl(179, 100%, 13%);
+}
+.container-box:last-child{
+    border-radius: 0px 5px 5px 0px;
+}
+.container-box:nth-child(2){
+    border-radius: 0px 0px 0px 0px !important;
+}
+.bnone{
+    border-radius: none !important;
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+}
+.content{
+    /* height: 50%; */
+
+}
+.content h1 { 
+    margin-bottom: 30px;
+    color: hsl(0, 0%, 95%);
+   text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 48px;
+
+}
+.btn a{
+    /* text-decoration: none; */
+    border-color: hsl(31, 77%, 52%);
+    padding: 15px 30px;
+    border-radius: 35px;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+
+}
+.sedansBtn{
+    color: hsl(31, 77%, 52%);
+}
+.suvsBtn{
+    color: hsl(184, 100%, 22%);
+}
+.luxuryBtn{
+    color: hsl(179, 100%, 13%);
+}
+
+
+.btn a:hover{
+    color: hsl(0, 0%, 95%);
+    /* text-decoration: none; */
+    border: 2px solid hsl(0, 0%, 95%);
+    background: transparent;
+
+}
+
+
+.content p{
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.8;
+    padding-right: 10px;
+}
+
+.attribution{
+    position: absolute;
+    /* totheight: 100vh; */
+    bottom: 0px;
+    padding: 20px;
+}
+
+/* responsive style sheet  */
+
+@media screen and (max-width: 1000px) {
+    .container {
+     
+        width: 90%;
+    }
+  }
+@media screen and (max-width: 750px) {
+    .container {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 50px 0px 50px 0px;
+    }
+    .container-box{
+        width: 80%;
+    }
+    .content h1 , .content p{
+        padding-bottom: 10px;
+        line-height: 1.3;
+    }
+    .content p{
+        padding: 0px;
+    }
+    .btn a{
+        padding: 10px 20px;
+    }
+  }
+
+  @media screen and (max-width: 375px) { 
+    .container{
+        width: 95%;
+    }
+    .container-box{
+      width: 90%;
+      height: 400px;
+    }
+    .content h1 { 
+        margin-bottom: 10px;
+    }
+    .container-box:first-child{
+        border-radius: 5px 5px 0px 0px !important;
+    }
+    .container-box:last-child{
+        border-radius: 0px 0px 5px 5px !important;
+    }
+  }
