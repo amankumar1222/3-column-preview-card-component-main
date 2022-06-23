@@ -92,12 +92,17 @@ background-color:  hsl(179, 100%, 13%);
     line-height: 1.8;
     padding-right: 10px;
 }
+footer{
+    position: absolute;
+    bottom: 10px;
+
+}
 
 .attribution{
-    position: absolute;
     /* totheight: 100vh; */
-    bottom: 0px;
-    padding: 20px;
+    /* bottom: 0; */
+    font-size: 12px;
+    
 }
 
 /* responsive style sheet  */
